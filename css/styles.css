@@ -1,0 +1,474 @@
+body, html {
+	width: 100%;
+	margin: 0;
+	font-size: 16px;	
+	background-image: url('../img/batya-bg.png');
+	background-position: 103% 40%;
+	background-repeat: no-repeat;
+	background-size: 1000px;
+	font-family: 'Koulen', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	overflow-x: hidden;
+}
+
+#flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+#header-1 {
+	text-align: center;			
+	font-size: 50px;
+	padding: 25px 10px 0 10px;
+	height: 80px;
+	color: #CD265E;
+}
+
+#header-2 {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #7a1839;
+	font-size: 20px;
+	padding: 7px 0;
+	background-color: #FEFEFE;
+}
+	
+	#header-2 a {
+		color: #CD265E;
+	}
+
+	#header-2 a:hover {
+		background-color: #CD265E;
+		color: white;
+	}
+
+main {
+	max-width: 1170px;
+}
+
+button {
+	float: right;
+	padding: 10px 20px;
+	margin: -50px 40px 0 0;
+	background-color: #CD265E;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	font-family: inherit;
+}
+
+	button:hover {
+		background-color: white;
+		color: #CD265E;
+		border: 1px solid #7a1839;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+.instrument-10,
+.instrument-11,
+.instrument-11 {
+	visibility: hidden;
+}
+
+#flex-guitars {
+	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+	.guitars {
+		width: 300px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	.guitars:hover {
+		border: 2px solid #CD265E;
+	}
+
+	.guitars img {
+		width: 300px;
+		border-radius: 10px;
+	}
+
+	.guitar-name {
+		color: #CD265E;
+		font-weight: bold;
+		padding: 5px 0 0 5px;		
+	}
+
+	.guitar-discribe {
+		padding: 10px 0 5px 5px;
+		font-style: italic;
+	}
+
+span {
+	color: black;
+	font-weight: 400;
+	padding-top: 20px;
+}
+
+.pop-name {
+	color: #CD265E;
+	font-weight: bold;
+	padding: 10px 0 0 5px;	
+}
+
+.pops {
+	overflow: scroll;
+}
+	
+.big {
+	display: flex;
+	justify-content: center;
+	background: url('../img/loader.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.small {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding-top: 10px;
+}
+
+.cancel {
+	float: right;
+	margin-top: -560px;
+	padding-right: 40px;
+	font-size: 18px;
+	color: #CD265E;
+}
+
+	.cancel:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	
+.popup-guitar-1 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 100px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+	.popup-guitar-1 .cancel {
+		margin-top: -525px;
+	}
+
+.popup-guitar-2 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+.popup-guitar-3 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+.popup-guitar-4 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+.popup-guitar-5 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+	.popup-guitar-5 .cancel {
+		margin-top: -500px;
+	}
+
+.popup-guitar-6 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+.popup-guitar-7 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+	.popup-guitar-7 .cancel {
+		margin-top: -500px;
+	}
+
+.popup-guitar-8 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}
+
+	.popup-guitar-8 .cancel {
+		margin-top: -500px;
+	}
+
+.popup-guitar-9 {
+	margin: 0 auto;
+	position: fixed;
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding: 80px 0 0 15px;
+	z-index: 1;
+	display: none;
+}		
+
+@media screen and (min-width: 2270px) {
+	html, body {
+		background-size: 1080px;
+	}
+}
+
+@media screen and (max-width: 1930px) {
+	html, body {
+		background-size: 900px;
+	}
+
+	.big img{
+		width: 650px;
+	}
+
+	.cancel {
+		padding-top: 35px;
+	}	
+}
+
+@media screen and (max-width: 1850px) {
+	html, body {
+		background-size: 800px;
+	}	
+}
+
+@media screen and (max-width: 1770px) {
+	html, body {
+		background-size: 700px; 
+	}	
+}
+
+@media screen and (max-width: 1690px) {
+	html, body {
+		background-size: 600px; 
+	}	
+}
+
+@media screen and (max-width: 1605px) {
+	.popup-guitar-1 {
+		margin-top: 0;
+	}
+
+	.guitars{
+		width: 250px;
+	}	
+
+	.guitars img{
+		width: 250px;
+	}
+
+	.big img{
+		width: 500px;
+	}
+
+	.small img {
+		width: 80px;
+	}
+	
+	.cancel {
+		padding-top: 120px;
+	}	
+}
+
+@media screen and (max-width: 1600px) {
+	html, body {
+		background-image: none;
+	}
+
+	header {
+		margin: 0 auto;
+	}
+
+	main {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1370px) {
+	.big img{
+		width: 350px;
+	}
+
+	.small img {
+		width: 80px;
+	}
+
+	.pop-name {
+		font-size: 16px;
+	}
+
+	.guitar-discribe {
+		font-size: 12px;
+	}
+
+	.cancel {
+		padding-top: 220px;
+	}	
+}
+
+@media screen and (max-width: 1155px) {
+	#header-1 {
+		font-size: 40px;
+		height: 70px;
+	}
+	
+	.guitars{
+		width: 200px;
+	}	
+
+	.guitars img{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	#header-1 {
+		font-size: 30px;
+		height: 60px;
+	}
+	
+	button {
+		padding: 5px 10px;
+		font-size: 14px;
+	}	
+}
+
+@media screen and (max-width: 705px) {
+	#header-1 {
+		font-size: 20px;
+		height: 50px;
+	}
+
+	#header-2 {
+		padding-top: -10px;
+	}
+
+	.guitars{
+		width: 150px;
+	}	
+
+	.guitars img{
+		width: 150px;
+	}
+
+	.big img{
+		width: 300px;
+	}
+
+	.small img {
+		width: 50px;
+	}
+
+	.cancel {
+		padding-top: 270px;
+	}			
+}
+
+@media screen and (max-width: 475px) {
+	#header-1 {
+		font-size: 16px;
+		height: 40px;
+	}
+
+	#header-2 {
+		font-size: 12px;
+	}
+
+	.guitars{
+		width: 100px;
+	}	
+
+	.guitars img{
+		width: 100px;
+	}
+
+	.guitar-name {
+		font-size: 10px;
+	}
+
+	.guitar-discribe {
+		font-size: 10px;
+	}	
+}
+
+@media screen and (max-width: 385px) {
+	#header-1 {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	#header-1 {
+		font-size: 12px;
+	}
+	
+	#header-2 {
+		font-size: 10px;
+	}	
+}
